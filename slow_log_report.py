@@ -28,8 +28,8 @@ example output:
 | 2     | 1     | 165.0   | 165 | 165 |
 +-------+-------+---------+-----+-----+
 
-1 {"query":{"match_all":{}},"facets":{"f1":{"facet_filter":{"exists":{"field":"answers.name"}},"term_list":{"fields":["answers.name"
-2 {"query":{"match_all":{}},"facets":{"f1":{"term_facet_sample":{"field":"answers.name","size":5,"sample":0.1}}},"size":0}
+1 {"query":{"match_all":{}}}
+2 {"query":{"match_all":{}},"facets":{"f1":{"terms":{"field":"description"}}},"size":0}
 """
 
 def _find_stuff_inside_brackets(text):
