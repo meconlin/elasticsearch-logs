@@ -17,7 +17,7 @@ python slow_log_report.py resources/index_search_slowlog.log
 +-------+-------+---------+-----+-----+
 
 1 {"query":{"match_all":{}}}
-2 {"query":{"match_all":{}},"facets":{"f1":{"term_facet":{"field":"description"}}},"size":0}
+2 {"query":{"match_all":{}},"facets":{"f1":{"terms":{"field":"description"}}},"size":0}
 
 ```
 
