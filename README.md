@@ -21,5 +21,13 @@ python slow_log_report.py resources/index_search_slowlog.log
 
 ```
 
-### Requirements ###
+#### Requirements
 Be sure to pip install -r requirements.txt to install [PrettyTable](https://pypi.python.org/pypi/PrettyTable)
+
+#### Expected Log Format
+
+```
+
+[2013-11-15 13:17:22,770][TRACE][index.search.slowlog.query] [<node name>] [<index name>][<shard>] took[1.7ms], took_millis[1], types[sunrise], stats[], search_type[QUERY_THEN_FETCH], total_shards[2], source[{"query":{"match_all":{}},"size":10}], extra_source[],
+
+```
